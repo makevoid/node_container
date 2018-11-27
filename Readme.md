@@ -11,7 +11,7 @@ uses buildpack-deps ( ubuntu - https://hub.docker.com/_/buildpack-deps/ - this i
 
 To test that it works:
 
-#### `docker build -t node-c . && docker run nodec`
+#### `docker build -t nodecc . && docker run nodecc`
 
 
 
