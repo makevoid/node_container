@@ -1,0 +1,31 @@
+# FROM ubuntu:bionic
+FROM node:chakracore
+
+# # install node 10
+# RUN apt-get update -y && \
+#   apt-get install -y curl apt-transport-https ca-certificates gnupg  git && \
+#   curl --fail -ssL -o setup-nodejs https://deb.nodesource.com/setup_10.x && \
+#   bash setup-nodejs
+
+# copy package.json here
+
+# RUN npm install # <- uncomment this
+
+
+# TODO: uncomment and use stage 2
+#
+# FROM ubuntu:bionic
+#
+# RUN apt-get update -y && \
+#     apt-get install -y build-essential
+
+# docker build -t node1 . && docker run node1
+
+# copy everything here
+
+RUN npm i -g lodash@4.17.11
+
+              # $(npm root --quiet -g)
+ENV NODE_PATH /usr/local/lib/node_modules/lodash
+
+CMD node -e 'console.log(require("lodash"))'
