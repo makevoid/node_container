@@ -1,6 +1,10 @@
-FROM node:chakracore
+FROM node:chakracore as builder
+
+# build and npm install here
 
 FROM node:chakracore
+# use this line to copy tour npm modules
+# COPY --from=builder .
 
 RUN apt-get update -y && \
     apt-get install -y build-essential
