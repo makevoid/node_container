@@ -10,7 +10,7 @@ uses buildpack-deps ( ubuntu - https://hub.docker.com/_/buildpack-deps/ - this i
 ### Use this command for the node shell (repl)
 
 
-#### `docker run -ti makevoid/node_container`
+#### `docker run -ti makevoid/node`
 
 
 ### Use this command to test-run the container
