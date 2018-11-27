@@ -1,8 +1,13 @@
 # node-container
 
-based on node chakracore
+### A nodejs chakracore-based container.
 
-multi-staged-build (docker) container for nodejs v11
+
+---
+
+This docker container is a node js container based on chakracore
+
+It features a multi-staged-build 
 
 uses buildpack-deps ( ubuntu - https://hub.docker.com/_/buildpack-deps/ - this is a development container, you should probably run on alpine or similar thou, or at least debian :) )
 
